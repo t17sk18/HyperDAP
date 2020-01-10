@@ -1,0 +1,22 @@
+.div( class="modalcontainer modal-large" id="modal-component-info" data-local-id="")
+    .div(class="container-fluid h-100")
+        div(class="row")
+            .col-2
+                h1(id = "component-info-title")
+            .col
+                h4(id = "trace-title" style = "text-align:center; padding-top: 15px")
+            .col-1
+                a(style=" z-index: 100;" class="window-close")
+                    i( id ="modal-component-info-close" class="fa fa-window-close icon-menu")
+
+        div(class="row" style="height:90%")
+            .col-2
+
+                hr
+                .component-info-description(id="component-info-description" style="overflow:auto;")
+            .col
+                hr
+                .component-info-status(id="component-info-status" data-trace-url="" class="chart-container")
+
+
+

@@ -1,0 +1,75 @@
+
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/mocha-test/mocha.css")
+
+
+    body
+        .div(id="mocha")
+
+        script(src='/mocha-test/chai.js')
+        script(src='/mocha-test/mocha.js')
+
+        script(class='mocha-init').
+            mocha.setup('bdd');
+            mocha.checkLeaks();
+
+        script.
+            expect = chai.expect;
+
+        // JQuery Libraries
+
+        script(src='/javascripts/packages/jquery-3.4.1.min.js')
+        script(src='/javascripts/packages/popper.min.js')
+        script(src='/javascripts/packages/bootstrap.min.js')
+
+        //- script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+        //- script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+        //- script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+
+
+        script(src='/javascripts/packages/jquery-ui.min.js')
+        script(src='/javascripts/packages/jquery-ui-droppable-iframe.js')
+        script(src='/javascripts/packages/jquery.plainmodal.min.js')
+
+        //GUI modules for testing
+        script(src='/javascripts/GUI/event-manager.js')
+        script(src='/javascripts/GUI/mediator.js')
+        script(src='/javascripts/GUI/tab-manager.js')
+
+        script(src='/javascripts/GUI/menu/component-info.js')
+        script(src='/javascripts/GUI/menu/input.js')
+        script(src='/javascripts/GUI/menu/load.js')
+        script(src='/javascripts/GUI/menu/menu.js')
+        script(src='/javascripts/GUI/menu/new.js')
+        script(src='/javascripts/GUI/menu/output.js')
+        script(src='/javascripts/GUI/menu/save.js')
+        script(src='/javascripts/GUI/menu/settings.js')
+
+        script(src='/javascripts/workflow/logic.js')
+        script(src='/javascripts/workflow/manager.js')
+
+        script(src='/javascripts/workflow/component/button-activator-delete-me.js')
+        script(src='/javascripts/workflow/component/dom-activator.js')
+        script(src='/javascripts/workflow/component/dom-builder.js')
+
+        script(src='/javascripts/server-connector/admin-connector.js')
+        script(src='/javascripts/server-connector/GUI-connector.js')
+        script(src='/javascripts/server-connector/menu-connector.js')
+        script(src='/javascripts/server-connector/user-connector.js')
+        script(src='/javascripts/server-connector/workflow-connector.js')
+
+
+
+        // Specs files
+        script(src='/mocha-test/test-one.js')
+
+        script(class='mocha-exec').
+            mocha.run();
+
+
+
+
+

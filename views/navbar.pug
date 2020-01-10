@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">HyperDAP</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                a(class="btn btn-outline-primary text-white font-weight-bold") User ID:  #{userID}
+                a " "
+                button(class= "btn btn-light" onclick="document.getElementById('logout-form').submit();") Log out
+                a " "
+                if isAdmin == true
+                    a(class="btn btn-warning" href="/admin")  Admin Control
+                a " "
+                a(class="btn btn-info" href="/help")  Help 
+                form(id="logout-form" method="post" action="/logout")
+                    input(type="hidden" name="name" value="value")
+                        
+                
+            </li>
+        </ul>
+    </div>
+
+</nav>

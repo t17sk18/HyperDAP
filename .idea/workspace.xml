@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe1dfdb2-b836-4188-aaed-056e087811d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../docs/User Acceptance Testing.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../docs/User Acceptance Testing.doc" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1OVA7qkiIUgjSLKvTtcKRG9IKcJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/www" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.www">
+    <configuration default="true" type="NodeJSConfigurationType" working-dir="bin/www">
+      <method v="2" />
+    </configuration>
+    <configuration name="www" type="NodeJSConfigurationType" path-to-js-file="www" working-dir="$PROJECT_DIR$/bin">
+      <method v="2" />
+    </configuration>
+    <configuration name="test\DatabaseTest.js" type="mocha-javascript-test-runner" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/DatabaseTest.js</test-file>
+      <method v="2" />
+    </configuration>
+    <configuration name="test\RouteTests.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/RouteTests.js</test-file>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Mocha.test\DatabaseTest.js" />
+      <item itemvalue="Mocha.test\RouteTests.js" />
+      <item itemvalue="Node.js.www" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.test\RouteTests.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe1dfdb2-b836-4188-aaed-056e087811d6" name="Default Changelist" comment="" />
+      <created>1561752409339</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561752409339</updated>
+      <workItem from="1561752410822" duration="251000" />
+      <workItem from="1561752687595" duration="147000" />
+      <workItem from="1561973995568" duration="4969000" />
+      <workItem from="1561994063313" duration="8641000" />
+      <workItem from="1562060104616" duration="6624000" />
+      <workItem from="1562146904070" duration="15210000" />
+      <workItem from="1562238017791" duration="2514000" />
+      <workItem from="1562321030276" duration="14310000" />
+      <workItem from="1562579461602" duration="5344000" />
+      <workItem from="1562855771770" duration="2383000" />
+      <workItem from="1563128815965" duration="313000" />
+      <workItem from="1563154045418" duration="3565000" />
+      <workItem from="1563274180360" duration="990000" />
+      <workItem from="1564051198596" duration="675000" />
+      <workItem from="1564052238946" duration="1547000" />
+      <workItem from="1564112425841" duration="2234000" />
+      <workItem from="1564315159597" duration="3309000" />
+      <workItem from="1564528419910" duration="289000" />
+      <workItem from="1564573556791" duration="1889000" />
+      <workItem from="1564665267949" duration="1327000" />
+      <workItem from="1564783695717" duration="612000" />
+      <workItem from="1564787470920" duration="485000" />
+      <workItem from="1564837702037" duration="6197000" />
+      <workItem from="1564931576972" duration="2644000" />
+      <workItem from="1565095949867" duration="4795000" />
+      <workItem from="1565108845646" duration="2087000" />
+      <workItem from="1565171575211" duration="1117000" />
+      <workItem from="1567010342136" duration="76000" />
+      <workItem from="1567010613610" duration="636000" />
+      <workItem from="1568073158112" duration="628000" />
+      <workItem from="1568074687092" duration="554000" />
+      <workItem from="1569294174973" duration="612000" />
+      <workItem from="1570808452244" duration="598000" />
+      <workItem from="1570929410372" duration="285000" />
+      <workItem from="1571562205916" duration="273000" />
+      <workItem from="1573255498826" duration="695000" />
+      <workItem from="1573256436564" duration="1227000" />
+      <workItem from="1573305544910" duration="1382000" />
+      <workItem from="1576164307621" duration="628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

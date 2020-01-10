@@ -1,0 +1,71 @@
+extends layout
+
+block content
+    <style>.form-control {margin:5px 5px;}</style> 
+    
+    div(class="container")
+        h1(style="text-align: center") Administrator Control Panel
+
+        div(class="text-right")
+            a(href="/") Go back to home
+
+        h3 Reset user password
+        div(class="form-inline")
+            label(class="btn btn-warning") UserID
+            select(class="form-control" id="user-id-reset")
+                - for(i in userIDList)
+                    //- - var IDItem = userIDList[i].user_id;
+                    option(value= userIDList[i].user_id) #{userIDList[i].user_id}
+            label(class="btn btn-warning") New Password 
+            input(class="form-control" id="password-reset")
+            button(class="btn btn-outline-danger" onclick="adminConnector.resetPassword();") Reset
+
+        h3 Application Logs 
+        
+        div(class="form-inline")
+            a(class="btn btn-warning") User ID 
+            input(class="form-control" name="user-id" id="user-id" type="text" onchange="adminConnector.filterLogResult();")
+            a(class="btn btn-warning") Number of Records 
+            input(class="form-control" name="log-num" id="log-num" type="number" onchange="adminConnector.filterLogResult();" value=20 min=0)
+            button(class="btn btn-outline-primary" onclick="adminConnector.filterLogResult();") Filter results
+
+        div(class="form-inline")
+            a(class="btn btn-info" style="margin: 5px 0px;") sorted by:
+            .div(id="sort-by")
+                .div(class="btn btn-outline-primary")
+                    input(class="form-check-input" type="radio" value="log_id" name="sort-by" onchange="adminConnector.filterLogResult();") 
+                    a Log ID
+                .div(class="btn btn-outline-primary")
+                    input(class="form-check-input" type="radio" value="user_id" name="sort-by" onchange="adminConnector.filterLogResult();") 
+                    a User ID
+                .div(class="btn btn-outline-primary")
+                    input(class="form-check-input" type="radio" value="action" name="sort-by" onchange="adminConnector.filterLogResult();") 
+                    a Action
+                .div(class="btn btn-outline-primary")
+                    input(class="form-check-input" type="radio" value="log_datetime" name="sort-by" checked onchange="adminConnector.filterLogResult();") 
+                    a Date and Time 
+            a(class="btn btn-info" style="margin: 5px 0px;") sorting order:
+            .div(id="sort-order")
+                .div(class="btn btn-outline-primary")
+                    input(class="form-check-input" type="radio" value="DESC" name="sort-order" checked onchange="adminConnector.filterLogResult();") 
+                    a DESC
+                .div(class="btn btn-outline-primary")
+                    input(class="form-check-input" type="radio" value="ASC" name="sort-order" onchange="adminConnector.filterLogResult();") 
+                    a ASC
+            
+
+        table(class="table" id="log-table")
+            tr
+                th Log ID
+                th User ID
+                th Action
+                th Log Date and Time
+            - for(i in logResult)
+                tr
+                    td #{logResult[i].log_id}
+                    td #{logResult[i].user_id}
+                    td #{logResult[i].action}
+                    td #{logResult[i].log_datetime}
+    
+
+    script(src='/javascripts/server-connector/admin-connector.js')

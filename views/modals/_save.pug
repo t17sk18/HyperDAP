@@ -1,0 +1,64 @@
+.modalcontainer(id="modal-save")
+    .div(class="container-fluid h-100")
+        .div(class="row h-100")
+            .col-1
+                .div
+                    .row
+                        .col
+                            a(class="modal-menu new-file-button-modal" style="font-size: 4vw;" title="New Workflow")
+                                i(class="fa fa-file")
+                    .row
+                        .col
+                            a(class="modal-menu open-file-button-modal" style="font-size: 4vw;" title="Open Existing Workflow")
+                                i(class="fa fa-folder-open")
+                    .row
+                        .col
+                            a(class="modal-menu-selected save-file-button-modal" style="font-size: 4vw;" title="Save Current Workflow")
+                                i(class="fa fa-cloud-upload")
+                    .row
+                        .col
+                            a(class="modal-menu settings-button-modal" style="font-size: 4vw;" id="settings-button" title="Settings")
+                                i(class="fa fa-bars")
+            .col-1
+            .vertical-divider
+            .col
+                .row
+                    .col
+                        h1 Save a workflow
+                    .col
+                        a(style=" z-index: 100;" class="window-close")
+                            i( id ="modal-save-window-close" class="fa fa-window-close icon-menu")
+
+                .row
+                    .col-4
+                        h5 List of existing workflows
+                        hr
+
+                        .thingy(style="height:400px; overflow:auto;")
+                            //- i=0;
+                            //- for (i=0; i < 25; i++)
+                            //    p
+                            //    a(href="#")=`Workflow ${i}`
+                            .div(id = "workflow_list_save")
+
+
+                    .col
+                        h5 Information about selected workflow
+                        hr
+                        p
+                        a Workflow Name
+                        p
+                        input(type = "text" name = "workflow_name" id = "save_workflow_name")
+                        p
+                        a Description
+                        p
+                        textarea( rows="10" cols= "80" id="workflow_description_area")
+                        //- .div(id="save-display")
+
+
+                hr
+                .row
+                    .col
+                        input(type="button" id="dwn-btn" class="btn btn-primary" value="Download current workflow")
+                    .col
+                        button(style="position: absolute; right:20px;" id="save-to-database-button" class="btn btn-primary") Save

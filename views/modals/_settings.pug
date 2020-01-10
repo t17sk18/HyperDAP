@@ -1,0 +1,76 @@
+style
+    include ../../public/stylesheets/grids.css
+
+.modalcontainer(id="modal-settings")
+    .div(class="container-fluid h-100")
+        .div(class="row h-100")
+            .col-1
+                .div
+                    .row
+                        .col
+                            a(class="modal-menu new-file-button-modal" style="font-size: 4vw;" title="New Workflow")
+                                i(class="fa fa-file")
+                    .row
+                        .col
+                            a(class="modal-menu open-file-button-modal" style="font-size: 4vw;" title="Open Existing Workflow")
+                                i(class="fa fa-folder-open")
+                    .row
+                        .col
+                            a(class="modal-menu save-file-button-modal" style="font-size: 4vw;" title="Save Current Workflow")
+                                i(class="fa fa-cloud-upload")
+                    .row
+                        .col
+                            a(class="modal-menu-selected settings-button-modal" style="font-size: 4vw;" id="settings-button" title="Settings")
+                                i(class="fa fa-bars")
+            .col-1
+            .vertical-divider
+            .col
+                .row
+                    .col
+                        h1 Settings
+                    .col
+                        a(style=" z-index: 100;" class="window-close")
+                            i( id ="modal-settings-window-close" class="fa fa-window-close icon-menu")
+
+                .row
+                    .col-4
+                        h5 Settings
+                        hr
+                        .thingy(style="height:350px; overflow:auto;")
+                            p Show grid lines:
+                            label(class="switch")
+                                input(type="checkbox" id="grid-toggle" checked)
+                                span(class="slider round")
+                            p Snap to grid:
+                            label(class="switch")
+                                input(type="checkbox" id="snap-toggle" )
+                                span(class="slider round")
+                            p Show Component Debug Information:
+                            p
+                                label(class="switch")
+                                    input(type="checkbox" id="debug-toggle" )
+                                    span(class="slider round")
+
+
+
+
+                    .col
+                        div(style = "text-align:center")
+                            h5 About
+                            hr
+                            h1 The HyperDAP Application
+                            hr
+                            h3 Built by Team Alpha:
+                            h4 Matthew Colbourne: 51874548
+                            h4 Abubakar Dadile: 51881457
+                            h4 Karthik Karanam:51881492
+                            h4 Yujie Zhang: 51878757
+
+                            h3
+
+
+
+                hr
+                .row
+                    .col
+                        button(id= "save-settings-button" style="position: absolute; right:20px;" onclick="" class="btn btn-primary") Save Settings

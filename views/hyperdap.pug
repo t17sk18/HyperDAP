@@ -1,0 +1,99 @@
+extends layout
+
+block content
+    style
+       include ../public/stylesheets/components.css
+    style
+       include ../public/stylesheets/jquery-ui.css
+    .container-fluid(style = "height:90%")
+        .row(style="height: 100%")
+            .col-2
+                .sidemenu(style="height: 100%")
+                    .row
+                        .col
+                            a(class="icon-menu new-file-button-modal" id="new-file-button" style="font-size: 40px;" title="New Workflow")
+                                i(class="fa fa-file")
+                        .col
+                            a(class="icon-menu open-file-button-modal" id="open-file-button" style="font-size: 45px;" title="Open Existing Workflow")
+                                i(class="fa fa-folder-open")
+                        .col
+                            a(class="icon-menu save-file-button-modal" id="save-file-button" style="font-size: 45px;" title="Save Current Workflow")
+                                i(class="fa fa-cloud-upload")
+                    .row
+                        .col
+
+                            .title
+
+                                h5 Components
+                                hr
+                            .components
+                                - for (i in componentList)
+                                    - let_id = componentList[i].name.replace(/\s/g, '');
+                                        .div(class ="ui-widget-content dragbox" id=`draggable${i}` data-component-id= componentList[i].id data-inputCount = componentList[i].inputCount data-description=componentList[i].description)
+                                            p=componentList[i].name
+
+                            .title
+                                hr
+                                h5 Feedback
+                                hr
+                            .feedback(id="feedback")
+
+                                p#feedback_text Components can be dragged from the menu to the workflow.
+            .col(style=" height: 100%")
+
+                    .div(class = "workflow" id="tabs" style=" height: 100%")
+                        ul
+                    a(class="settings settings-button-modal" id="settings-button" title="Settings")
+                        i(class="fa fa-bars")
+
+        .row
+            .debug(id = "debug")
+
+    include modals/_component-info.pug
+    include modals/_input.pug
+    include modals/_new.pug
+    include modals/_open.pug
+    include modals/_output.pug
+    include modals/_save.pug
+    include modals/_settings.pug
+
+
+
+
+    //- //script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+
+
+
+
+    script(src='/javascripts/packages/jquery-ui.min.js')
+    script(src='/javascripts/packages/jquery-ui-droppable-iframe.js')
+    script(src='/javascripts/packages/jquery.plainmodal.min.js')
+    script(src='/javascripts/packages/plotly-latest.min.js')
+
+    //- //script(src='/javascripts/GUI/database-connector.js')
+    script(src='/javascripts/server-connector/GUI-connector.js')
+    script(src='/javascripts/server-connector/menu-connector.js')
+    script(src='/javascripts/server-connector/user-connector.js')
+
+
+    script(src='/javascripts/GUI/mediator.js')
+    script(src='/javascripts/GUI/tab-manager.js')
+    script(src='/javascripts/GUI/chart.js')
+
+    script(src='/javascripts/GUI/menu/component-info.js')
+    script(src='/javascripts/GUI/menu/input.js')
+    script(src='/javascripts/GUI/menu/load.js')
+    script(src='/javascripts/GUI/menu/menu.js')
+    script(src='/javascripts/GUI/menu/new.js')
+    script(src='/javascripts/GUI/menu/output.js')
+    script(src='/javascripts/GUI/menu/save.js')
+    script(src='/javascripts/GUI/menu/settings.js')
+
+
+
+
+    //- // Starts application, must be loaded last
+    script(src='/javascripts/GUI/event-manager.js')
+
+
+

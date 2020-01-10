@@ -1,0 +1,34 @@
+.modalcontainer(id="modal-input" data-input-id="" data-trace-url="")
+    .container
+        .row
+            .col
+                h1 Select an input
+            .col
+                a(style=" z-index: 100;" class="window-close")
+                    i( id ="modal-input-window-close" class="fa fa-window-close icon-menu")
+
+        .row
+            .col-3
+                h5 List of input traces
+                hr
+                .div(id="trace-list" style="height:425px; overflow:auto;")
+                //.div(style="height:425px; overflow:auto;")
+                    - for (i=1; i < 26; i++)
+                        p
+                        a(href="#")=`Trace ${i}`
+
+
+
+            .col
+                h4(id = "preview-trace-title" style = "text-align:center; padding-top: 15px")
+                hr
+                .div(id = "preview-trace"  class="chart-container")
+
+
+        hr
+        .row
+            .col
+                button(style="position: absolute; right:20px;" onclick="inputModule.closeModal()" class="btn btn-primary") Load
+        //.row
+            .col
+                //button(style="position: absolute; right:20px;" onclick="databaseConnectorGUI.sendInput()") Load new input

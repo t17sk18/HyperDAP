@@ -1,0 +1,56 @@
+.modalcontainer(id="modal-open")
+    .div(class="container-fluid h-100")
+        .div(class="row h-100")
+            .col-1
+                .div
+                    .row
+                        .col
+                            a(class="modal-menu new-file-button-modal" style="font-size: 4vw;" title="New Workflow")
+                                i(class="fa fa-file")
+                    .row
+                        .col
+                            a(class="modal-menu-selected open-file-button-modal" style="font-size: 4vw;" title="Open Existing Workflow")
+                                i(class="fa fa-folder-open")
+                    .row
+                        .col
+                            a(class="modal-menu save-file-button-modal" style="font-size: 4vw;" title="Save Current Workflow")
+                                i(class="fa fa-cloud-upload")
+                    .row
+                        .col
+                            a(class="modal-menu settings-button-modal" style="font-size: 4vw;" id="settings-button" title="Settings")
+                                i(class="fa fa-bars")
+            .col-1
+            .vertical-divider
+            .col
+                .row
+                    .col
+                        h1 Open an existing workflow
+                    .col
+                        a(style=" z-index: 100;" class="window-close")
+                            i( id ="modal-open-window-close" class="fa fa-window-close icon-menu")
+
+                .row
+                    .col-6
+                        h5 List of workflows
+                        hr
+                        .thingy(style="height:350px; overflow:auto; ")
+
+                            .div(id = "workflow_list_open")
+
+                    .col
+                        h5 Information about selected workflow
+                        hr
+                        p(id = "load_workflow_description")
+                        .div(id="load-information")
+
+                hr
+                .row
+                    .col-4
+
+
+                        label(id="open-file-label" for="filein" class="custom-file-upload btn btn-primary" onclick="") Open a file from your computer
+                        input(type="file" id="filein" name="file" style= "display :none")
+
+
+                    .col
+                        button(style="position: absolute; right:20px;" onclick="" class="btn btn-primary" id="load-the-data-button") Load

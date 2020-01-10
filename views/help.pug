@@ -1,0 +1,189 @@
+extends layout
+
+block content
+
+  div(class="container")
+    h1(id="top" style="text-align: center") User Manual
+    div(class="text-right")
+      a(href="/") Go back to home
+
+    h2 contents
+    h5(class="font-weight-normal")
+      ol 
+        li
+          a(href="#login") Login
+        li
+          a(href="#main_application") Main Application
+        li  
+          a(href="#c_o_s_d_wf") Create, Open, Save, and Delete Workflow
+        li
+          a(href="#edit_wf") Editing the workflow
+        li
+          a(href="#data_processing") Data Processing 
+        li
+          a(href="#user_settings") User Settings 
+        li
+          a(href="#admin_control") Administrator Control Page 
+
+    h2(id="login") Login 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") Before using the HyperDap application, there is an authentication process. Users will be asked to enter the username and the password to access the application. Please contact the administrator for the username and password. For demonstration, there is a testing user “HDtest” with password “mypassword1”. 
+
+    div(class="container text-center")
+      img(style="width:90%" src="/user-manual/Figure 1 Login Page.png")
+      p(class="font-weight-lighter") Figure 1 Login Page
+
+    h2(id="main_application") Main Application 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") After the login process, you will enter the main page of HyperDap application. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 2 Main Page.png")
+      p(class="font-weight-lighter") Figure 2 Main Page
+
+    h2(id="c_o_s_d_wf") Create, Open, Save, and Delete Workflow 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") Using the buttons on the top left, you can create, open, or save a workflow. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 3 Top Left Buttons.png")
+      p(class="font-weight-lighter") Figure 3 Top Left Buttons
+
+    h4(class="font-weight-normal") The buttons are in the area of the orange rectangle. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 4 Click on the New Button.png")
+      p(class="font-weight-lighter") Figure 4 Click on the New Button
+
+    h4(class="font-weight-normal") If click on the new button, the “New Workflow” window will be open, and you will be able to create a new workflow here. User can create a workflow by clicking on the create button after enter the workflow name. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 5 New Workflow Window.png")
+      p(class="font-weight-lighter") Figure 5 New Workflow Window
+
+    h4(class="font-weight-normal") If click on the open button, the “Open Workflow” window will be open, and you will be able to open an existing workflow here. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 6 Click on the Open Button.png")
+      p(class="font-weight-lighter") Figure 6 Click on the Open Button
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 7 Open Workflow Window.png")
+      p(class="font-weight-lighter") Figure 7 Open Workflow Window
+
+    h4(class="font-weight-normal") User can also delete a workflow by clicking on the delete button here. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 8 Delete a Workflow.png")
+      p(class="font-weight-lighter") Figure 8 Delete a Workflow
+
+    h4(class="font-weight-normal") If click on the save button, the “Save Workflow” window will be open, and you will be able to save a workflow here. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 9 Click on the Save Button.png")
+      p(class="font-weight-lighter") Figure 9 Click on the Save Button
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 10 Save Workflow Window.png")
+      p(class="font-weight-lighter") Figure 10 Save Workflow Window
+
+    h4(class="font-weight-normal") In this window, you can edit the workflow name and the description. 
+
+    h2(id="edit_wf") Editing the workflow 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") Users can add new components to the workflow by dragging the components from the menu on the left. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 11 Add a Component-1.png")
+      p(class="font-weight-lighter") Figure 11 Add a Component-1
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 12 Add a Component-2.png")
+      p(class="font-weight-lighter") Figure 12 Add a Component-2
+
+    h4(class="font-weight-normal") Then users can connect the components simply by dragging line from one node to another. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 13 Connect Components-1.png")
+      p(class="font-weight-lighter") Figure 13 Connect Components-1
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 14 Connect Components-2.png")
+      p(class="font-weight-lighter") Figure 14 Connect Components-2
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 15 Connect Components-3.png")
+      p(class="font-weight-lighter") Figure 15 Connect Components-3
+
+    h4(class="font-weight-normal") Once a valid path established, the colour of the line will turn green. 
+
+    h2(id="data_processing") Data Processing 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") With an existing workflow, users can process the data, the first step of doing it is to select the input trace by clicking on the trace button on input components. If there are more than one input components, traces for each input components need to be selected. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 16 Example Workflow.png")
+      p(class="font-weight-lighter") Figure 16 Example Workflow
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 17 Click on Input Button.png")
+      p(class="font-weight-lighter") Figure 17 Click on Input Button
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 18 Select Input Window.png")
+      p(class="font-weight-lighter") Figure 18 Select Input Window
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 19 Trace Loaded.png")
+      p(class="font-weight-lighter") Figure 19 Trace Loaded
+
+
+    h4(class="font-weight-normal") Then the data will be processed automatically and the results will be cached on the server. Every time you click on the “i” button on the component, a pop-up window will show the graph of the results. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 20 After Clicking on i Button.png")
+      p(class="font-weight-lighter") Figure 20 After Clicking on "i" Button
+
+    h4(class="font-weight-normal") To visualize the results from all output components, click on the “data” button on any one of the output components. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 21 Click on Data Button.png")
+      p(class="font-weight-lighter") Figure 21 Click on Data Button
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 22 Visualize All Outputs.png")
+      p(class="font-weight-lighter") Figure 22 Visualize All Outputs
+
+    h2(id="user_settings") User Settings 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") Users can change the settings including showing grid line, snapping to the grid, and showing debugging information. The settings are consistent by keeping them in the database. 
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 23 Click on Settings Button.png")
+      p(class="font-weight-lighter") Figure 23 Click on Settings Button
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 24 Settings Window.png")
+      p(class="font-weight-lighter") Figure 24 Settings Window
+
+    h2(id="admin_control") Administrator Control Page 
+    div(class="text-right")
+      a(href="#top") Go to top
+
+    h4(class="font-weight-normal") If the users have the administrator privilege, they can reset the password of the user, and view all the logs. The logs can be sorted in different ways.  
+
+    div(class="text-center")
+      img(style="width:90%" src="/user-manual/Figure 25 Admin Control Page.png")
+      p(class="font-weight-lighter") Figure 25 Admin Control Page
